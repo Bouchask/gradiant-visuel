@@ -9,6 +9,17 @@ Cet outil web permet de visualiser diverses fonctions d'activation utilisées en
 *   **Graphiques 2D et 3D** : Affichez les fonctions en 2D (tracé de la fonction et de sa dérivée) ou en 3D (surface de la fonction).
 *   **Interface web interactive** : Une interface utilisateur simple et intuitive pour une exploration fluide.
 
+## Exemples de Fonctions d'Optimisation
+
+Voici quelques exemples des fonctions que vous pouvez visualiser avec cet outil :
+
+*   **Sigmoid**: `1 / (1 + np.exp(-x))` - Une fonction lisse qui mappe les valeurs en entrée dans l'intervalle (0, 1).
+*   **Tanh**: `np.tanh(x)` - Similaire à la sigmoïde mais mappe les valeurs dans l'intervalle (-1, 1).
+*   **ReLU (Rectified Linear Unit)**: `np.maximum(0, x)` - Une fonction linéaire par morceaux qui renvoie l'entrée si elle est positive, sinon elle renvoie zéro.
+*   **Leaky ReLU**: `np.where(x > 0, x, x * 0.01)` - Une variante de ReLU qui permet une petite pente pour les valeurs négatives.
+*   **Gaussian**: `np.exp(-x**2)` - La fonction gaussienne, qui forme une courbe en forme de cloche.
+*   **Sinc**: `np.sinc(x)` - La fonction sinus cardinal, utile dans le traitement du signal.
+
 ## Structure du Projet
 
 *   `app.py`: L'application web principale basée sur Flask.
@@ -31,10 +42,6 @@ Cet outil web permet de visualiser diverses fonctions d'activation utilisées en
 
 3.  **Ouvrir dans le navigateur**:
     Accédez à `http://127.0.0.1:5000` dans votre navigateur web.
-
-## Captures d'écran
-
-*(Insérez ici des captures d'écran de l'application si vous le souhaitez)*
 
 ## Auteur
 
